@@ -1,0 +1,154 @@
+/* Navigation */
+.nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #818181;
+}
+
+.sticky {
+	top: 0;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+}
+
+.nav li {
+	float: left;
+}
+
+.nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.nav li a:hover {
+	background-color: #111;
+}
+
+.active {
+	background-color: #4CAF50;
+}
+
+/* Images */
+#helmet {
+	padding-top: 300px;
+	width: 200px;
+	height: auto;
+}
+
+/* Text */
+.socialsText {
+	padding-top: 350px;
+}
+
+.homeText {
+	padding-bottom: 350px;
+}
+
+.socialButton {
+	padding-bottom: 350px;
+}
+
+
+/* Default */
+body {
+	margin: auto;
+	padding: auto;
+	text-align: center;
+	text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+	background-color: #333
+}
+
+p {
+	font-family: 'Averia Sans Libre', cursive;
+	font-size: 1.5rem;
+	color: #FFFFFF;
+	
+}
+
+h1 {
+	font-family: 'Averia Sans Libre', cursive;
+	font-size: 3rem;
+	color: #FFFFFF
+}
+
+h2 {
+	font-family: 'Averia Sans Libre', cursive;
+	font-size: 2rem;
+	color: #FFFFFF
+}
+
+h3 {
+	font-family: 'Averia Sans Libre', cursive;
+	font-size: 1rem;
+	color: #FFFFFF
+}
+
+table {
+	font-family: 'Averia Sans Libre', cursive;
+	font-size: 1rem;
+	color: #FFFFFF
+}
+
+form {
+	font-family: 'Averia Sans Libre', cursive;
+	font-size: 1rem;
+	color: #FFFFFF;
+}
+
+li {
+	font-family: 'Averia Sans Libre', cursive;
+	font-size: 1rem;
+	color: #FFFFFF;
+}
+
+a {
+	font-family: 'Averia Sans Libre', cursive;
+	font-size: 1rem;
+	color: #FFFFFF;
+}
+
+button {
+	background-color: #333;
+    border: 0px solid black;
+    color: #333;
+    padding: 0px 0px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0px 5px;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: auto;
+    padding-top: 0;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content p{
+    max-width: auto;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
