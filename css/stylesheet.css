@@ -56,8 +56,10 @@
 
 /* Default */
 body {
-	margin: auto;
-	padding: auto;
+	min-height: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
 	text-align: center;
 	text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
 	background-color: #333
@@ -126,15 +128,14 @@ button {
 }
 
 footer{
-    position: absolute;
+    position: fixed;
+	left: 0;
     bottom: 0;
-    left: 0;
-    right: 0;
+	right: 0;
     background: #111;
     height: auto;
-    width: auto;
-    padding-top: 0;
-    color: #fff;
+    width: 100%;
+	margin: auto;
 }
 
 .footer-content{
