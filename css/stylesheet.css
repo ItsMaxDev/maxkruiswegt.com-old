@@ -40,7 +40,7 @@
 	align-items: center;
 }
 
-.socials {
+.secondPage {
 	margin-top: 15%;
 	margin-bottom: 15%;
 	display: flex;
@@ -61,11 +61,11 @@
 	text-align: center;
 }
 
-.socialButtons {
+.buttons {
 	flex-direction: row;
 }
 
-.socialButtonImages {
+.buttonImages {
 	width: 64px;
 	height: 64px;
 }
