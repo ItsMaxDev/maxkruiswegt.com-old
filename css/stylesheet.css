@@ -9,7 +9,6 @@
 
 .sticky {
 	top: 0;
-	position: -webkit-sticky; /* Safari */
 	position: sticky;
 }
 
@@ -20,7 +19,6 @@
 .nav li a {
 	display: block;
 	color: white;
-	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 }
@@ -33,24 +31,41 @@
 	background-color: #4CAF50;
 }
 
-/* Images */
+/* Page FLEX settings */
+.home {
+	margin: 15%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.socials {
+	margin: 15%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 #helmet {
-	padding-top: 300px;
 	width: 200px;
 	height: auto;
 }
 
-/* Text */
-.socialsText {
-	padding-top: 350px;
+#textpageone {
+	text-align: center;
 }
 
-.homeText {
-	padding-bottom: 350px;
+#socialsText {
+	text-align: center;
 }
 
-.socialButton {
-	padding-bottom: 350px;
+.socialButtons {
+	flex-direction: row;
+}
+
+.socialButtonImages {
+	width: 64px;
+	height: 64px;
 }
 
 
@@ -60,7 +75,6 @@ body {
 	position: relative;
 	margin: 0;
 	padding: 0;
-	text-align: center;
 	text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
 	background-color: #333
 }
@@ -117,7 +131,6 @@ a {
 button {
 	background-color: #333;
     border: 0px solid black;
-    color: #333;
     padding: 0px 0px;
     text-align: center;
     display: inline-block;
@@ -147,7 +160,6 @@ footer{
 }
 
 .footer-content p{
-    max-width: auto;
     margin: 10px auto;
     line-height: 28px;
     font-size: 14px;
