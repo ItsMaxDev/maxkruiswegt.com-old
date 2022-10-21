@@ -1,84 +1,17 @@
-/* Navigation */
-.nav {
-	list-style-type: none;
+* {
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
-	background-color: #818181;
-}
-
-.sticky {
-	top: 0;
-	position: sticky;
-}
-
-.nav li {
-	float: left;
-}
-
-.nav li a {
-	display: block;
-	color: white;
-	padding: 14px 16px;
+	border: 0;
 	text-decoration: none;
-}
-
-.nav li a:hover {
-	background-color: #111;
-}
-
-.active {
-	background-color: #4CAF50;
-}
-
-/* Page FLEX settings */
-.home {
-	margin-top: 15%;
-	margin-bottom: 15%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.secondPage {
-	margin-top: 15%;
-	margin-bottom: 15%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-#helmet {
-	width: 200px;
-	height: auto;
-}
-
-#textpageone {
-	text-align: center;
-}
-
-#socialsText {
-	text-align: center;
-}
-
-.buttons {
-	flex-direction: row;
-}
-
-.buttonImages {
-	width: 64px;
-	height: 64px;
-}
-
-
-/* Default */
-body {
-	min-height: 100%;
-	position: relative;
-	margin: 0;
-	padding: 0;
+	list-style: none;
+	color: #FFFFFF;
 	text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
-	background-color: #333
+}
+
+body {
+	background-color: #333;
+	font-size: 16px;
+	font-family: 'Averia Sans Libre', cursive;
 }
 
 p {
@@ -88,82 +21,66 @@ p {
 	
 }
 
-h1 {
-	font-family: 'Averia Sans Libre', cursive;
-	font-size: 3rem;
-	color: #FFFFFF
-}
+/*[Navigation]*/
+/**/.Navigation {
+/**/	display: flex;
+/**/	background-color: #555;
+/**/	height: 64px;
+/**/}
+/**/#Icon {
+/**/	height: 64px;
+/**/	width: 64px;
+/**/}
+/**/#NavList {
+/**/	display: flex;
+/**/	height: 64px;
+/**/	flex-direction: row;
+/**/	align-items: center;
+/**/}
+/**/#NavList li {
+/**/	margin-left: 15px;
+/**/}
+/**/#NavActive, #NavList li:hover {
+/**/	border-bottom: solid #000;
+/**/}
 
-h2 {
-	font-family: 'Averia Sans Libre', cursive;
-	font-size: 2rem;
-	color: #FFFFFF
-}
+/*[Index/Home Text and Image]*/
+/**/.HomeImageAndText {
+/**/	display: flex;
+/**/	height: 920px;
+/**/	flex-direction: column;
+/**/	align-items: center;
+/**/	justify-content: center;
+/**/}
+/**/#HomeImage {
+/**/	width: 300px;
+/**/	height: auto;
+/**/}
+/**/#HomeText {
+/**/	width: 450px;
+/**/	text-align: center;
+/**/    margin-top: 15px;
+/**/}
 
-h3 {
-	font-family: 'Averia Sans Libre', cursive;
-	font-size: 1rem;
-	color: #FFFFFF
-}
+/*[Footer]*/
+/**/.Footer {
+/**/	display: flex;
+/**/	background-color: #222;
+/**/	height: 23px;
+/**/}
+/**/.Footer p {
+/**/	font-size: 1em;
+/**/}
 
-table {
-	font-family: 'Averia Sans Libre', cursive;
-	font-size: 1rem;
-	color: #FFFFFF
-}
+.SocialsTextAndButtons {
 
-form {
-	font-family: 'Averia Sans Libre', cursive;
-	font-size: 1rem;
-	color: #FFFFFF;
 }
-
-li {
-	font-family: 'Averia Sans Libre', cursive;
-	font-size: 1rem;
-	color: #FFFFFF;
-}
-
-a {
-	font-family: 'Averia Sans Libre', cursive;
-	font-size: 1rem;
-	color: #FFFFFF;
-}
-
-button {
+.ButtonImages {
+	height: 128px;
+	width: 128px;
 	background-color: #333;
-    border: 0px solid black;
-    padding: 0px 0px;
-    text-align: center;
-    display: inline-block;
-    font-size: 1rem;
-    margin: 0px 5px;
-    cursor: pointer;
-    text-decoration:none;
+	cursor: pointer;
+	margin: 0px 5px;
 }
 
-footer{
-    position: fixed;
-	left: 0;
-    bottom: 0;
-	right: 0;
-    background: #111;
-    height: auto;
-    width: 100%;
-	margin: auto;
-}
 
-.footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.footer-content p{
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 14px;
-    color: #cacdd2;
-}
