@@ -10,6 +10,9 @@
 }
 
 body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 	background-color: #333;
 	font-size: 16px;
 	font-family: 'Averia Sans Libre', cursive;
@@ -65,11 +68,10 @@ p {
 
 /*[Footer]*/
 /**/.Footer {
-/**/	display: flex;
-/**/	background-color: #222;
-/**/	height: 23px;
-/**/    justify-content: center;
-/**/    align-items: center;
+/**/background-color: #222;
+/**/height: 23px;
+/**/width: 100%;
+/**/margin-top: auto;
 /**/}
 /**/.Footer p {
 /**/	font-size: 1em;
@@ -97,4 +99,27 @@ p {
 /**/	cursor: pointer;
 /**/}
 
+/*[Versie voor Telefoons]*/
+@media screen and (max-width: 480px) {
 
+	/*[Text 1.5em -> 1em]*/
+	p {
+		font-size: 1em;
+	}
+
+	/*[Page content 920px -> 500px]*/
+	.SocialsTextAndButtons, .HomeImageAndText {
+		height: 500px;
+	}
+
+	/*[Home image 200px -> 150px]*/
+	#HomeImage {
+		width: 150px;
+	}
+
+	/*[Social Buttons 128px -> 64px]*/
+	.ButtonImages {
+		height: 64px;
+		width: 64px;
+	}
+}
