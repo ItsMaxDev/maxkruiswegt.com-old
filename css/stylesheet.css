@@ -42,7 +42,7 @@ p {
 /**/	align-items: center;
 /**/}
 /**/#NavList li {
-/**/	margin-left: 5%;
+/**/	margin-left: 3vw;
 /**/}
 /**/#NavActive, #NavList li:hover {
 /**/	border-bottom: solid #000;
@@ -100,13 +100,17 @@ p {
 /**/}
 
 /*[Experience.html]*/
-.ExperienceMain {
-	height: 100vh;
-	display: flex;
-	flex-direction: Column;
-	align-items: center;
-	justify-content: center;
-}
+/**/.ExperienceMain {
+/**/	height: 100vh;
+/**/	display: flex;
+/**/	flex-direction: Column;
+/**/	align-items: center;
+/**/	justify-content: center;
+/**/}
+/**/#ExperienceImage {
+/**/	width: 50%;
+/**/	height: auto;
+/**/}
 
 /*[Versie voor Telefoons]*/
 @media screen and (max-width: 480px) {
