@@ -6,7 +6,8 @@
 	list-style: none;
 	color: #FFFFFF;
 	text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
-	max-width: 100%;
+	max-width: 100vw;
+	max-height: 100vh;
 }
 
 body {
@@ -20,9 +21,8 @@ body {
 
 p {
 	font-family: 'Averia Sans Libre', cursive;
-	font-size: 1.5rem;
+	font-size: 1.5em;
 	color: #FFFFFF;
-	
 }
 
 /*[Navigation]*/
@@ -42,7 +42,7 @@ p {
 /**/	align-items: center;
 /**/}
 /**/#NavList li {
-/**/	margin-left: 15px;
+/**/	margin-left: 5%;
 /**/}
 /**/#NavActive, #NavList li:hover {
 /**/	border-bottom: solid #000;
@@ -51,13 +51,13 @@ p {
 /*[Index.html Text and Image]*/
 /**/.HomeImageAndText {
 /**/	display: flex;
-/**/	height: 920px;
+/**/	height: 100vh;
 /**/	flex-direction: column;
 /**/	align-items: center;
 /**/	justify-content: center;
 /**/}
 /**/#HomeImage {
-/**/	width: 200px;
+/**/	width: 30%;
 /**/	height: auto;
 /**/}
 /**/#HomeText {
@@ -69,8 +69,6 @@ p {
 /*[Footer]*/
 /**/.Footer {
 /**/background-color: #222;
-/**/height: 23px;
-/**/width: 100%;
 /**/margin-top: auto;
 /**/}
 /**/.Footer p {
@@ -80,7 +78,7 @@ p {
 /*[Socials.html Text and Image]*/
 /**/.SocialsTextAndButtons {
 /**/	display: flex;
-/**/	height: 920px;
+/**/	height: 100vh;
 /**/	flex-direction: column;
 /**/	align-items: center;
 /**/	justify-content: center;
@@ -92,34 +90,29 @@ p {
 /**/#SocialsButtons button {
 /**/	background-color: #333;
 /**/	margin: 0px 5px;
+/**/    width: 128px;
+/**/    height: 128px;
 /**/}
 /**/.ButtonImages {
-/**/	height: 128px;
-/**/	width: 128px;
+/**/	width: 100%;
+/**/	height: auto;
 /**/	cursor: pointer;
 /**/}
+
+/*[Experience.html]*/
+.ExperienceMain {
+	height: 100vh;
+	display: flex;
+	flex-direction: Column;
+	align-items: center;
+	justify-content: center;
+}
 
 /*[Versie voor Telefoons]*/
 @media screen and (max-width: 480px) {
 
-	/*[Text 1.5em -> 1em]*/
-	p {
-		font-size: 1em;
-	}
+#NavList li, #HomeText, .Footer p {
+	font-size: 5vw;
+}
 
-	/*[Page content 920px -> 500px]*/
-	.SocialsTextAndButtons, .HomeImageAndText {
-		height: 500px;
-	}
-
-	/*[Home image 200px -> 150px]*/
-	#HomeImage {
-		width: 150px;
-	}
-
-	/*[Social Buttons 128px -> 64px]*/
-	.ButtonImages {
-		height: 64px;
-		width: 64px;
-	}
 }
