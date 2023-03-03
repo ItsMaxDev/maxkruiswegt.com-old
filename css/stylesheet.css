@@ -42,7 +42,7 @@ p {
 /**/	align-items: center;
 /**/}
 /**/#NavList li {
-/**/	margin-left: 3vw;
+/**/	margin-left: 10%;
 /**/}
 /**/#NavActive, #NavList li:hover {
 /**/	border-bottom: solid #000;
@@ -57,7 +57,7 @@ p {
 /**/	justify-content: center;
 /**/}
 /**/#HomeImage {
-/**/	width: 30%;
+/**/	width: 10%;
 /**/	height: auto;
 /**/}
 /**/#HomeText {
@@ -108,7 +108,7 @@ p {
 /**/	justify-content: center;
 /**/}
 /**/#ExperienceImage {
-/**/	width: 50%;
+/**/	width: 30%;
 /**/	height: auto;
 /**/}
 
@@ -117,6 +117,10 @@ p {
 
 #NavList li, #HomeText, .Footer p {
 	font-size: 5vw;
+}
+
+#ExperienceImage, #HomeImage {
+	width: 50%;
 }
 
 }
