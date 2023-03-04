@@ -57,7 +57,7 @@ p {
 /**/	justify-content: center;
 /**/}
 /**/#HomeImage {
-/**/	width: 10%;
+/**/	width: 256px;
 /**/	height: auto;
 /**/}
 /**/#HomeText {
@@ -105,22 +105,61 @@ p {
 /**/	display: flex;
 /**/	flex-direction: Column;
 /**/	align-items: center;
-/**/	justify-content: center;
+/**/	justify-content: space-evenly;
+		font-size: 1em;
 /**/}
-/**/#ExperienceImage {
-/**/	width: 30%;
-/**/	height: auto;
+/**/.Experience {
+		display: flex;
+		align-items: center;
+		background-color: rgba(0, 0, 0, 0.1);
+		border-radius: 30px;
+		height: 20vh;
+		width: 90vw;
+/**/}
+/**/.ExperienceImage {
+/**/	width: auto;
+/**/	height: 20vh;
+		margin-right: 2.5vw;
+		margin-left: 2.5vw;
+/**/}
+/**/.ExperienceText {
+		
 /**/}
 
 /*[Versie voor Telefoons]*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 440px) {
 
-#NavList li, #HomeText, .Footer p {
+#NavList li, #HomeText, .Footer p, #SocialsText {
 	font-size: 5vw;
 }
 
-#ExperienceImage, #HomeImage {
+#HomeImage {
 	width: 50%;
 }
+
+.ExperienceText {
+	font-size: 0.75em;
+	margin-left: 3vw;
+	margin-right: 3vw;
+	margin-top: 3vw;
+}
+
+.ExperienceImage {
+	height: 50%;
+}
+
+.Experience {
+	flex-direction: column;
+	height: 25vh;
+}
+
+}
+
+/*[Versie voor Tablets]*/
+@media screen and (min-width:440px) and (max-width: 1024px) {
+
+	.ExperienceText {
+		font-size: 2.3vw;
+	}
 
 }
