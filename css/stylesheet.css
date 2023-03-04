@@ -142,9 +142,15 @@ a:link {
 /**/	margin-left: 2.5vw;
 /**/	border-radius: 30px;
 /**/}
+.ExperienceTitleAndText {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 15vh;
+}
 
 /*[Versie voor Telefoons]*/
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 480px) {
 
 #NavList li, #HomeText, .Footer p, #SocialsText {
 	font-size: 5vw;
@@ -155,26 +161,24 @@ a:link {
 }
 
 .ExperienceText {
-	font-size: 0.75em;
-	margin-left: 3vw;
-	margin-right: 3vw;
-	margin-top: 3vw;
+	font-size: 0.70em;
+}
+
+.ExperienceTitle {
+	font-size: 0.80em;
 }
 
 .ExperienceImage {
-	height: 50%;
-	margin-top: 3vw;
-}
-
-.Experience {
-	flex-direction: column;
-	height: 25vh;
+	height: 7.5vh;
+	border-radius: 15px;
+	align-self: flex-start;
+	margin-top: 2.5vw;
 }
 
 }
 
 /*[Versie voor Tablets]*/
-@media screen and (min-width:440px) and (max-width: 1024px) {
+@media screen and (min-width:480px) and (max-width: 1024px) {
 
 	.ExperienceText {
 		font-size: 2.3vw;
