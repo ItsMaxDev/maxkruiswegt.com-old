@@ -25,6 +25,22 @@ p {
 	color: #FFFFFF;
 }
 
+a:link {
+	color: cyan;
+  }
+  
+  a:visited {
+	color: cyan;
+  }
+  
+  a:hover {
+	color: rgb(15, 136, 136);
+  }
+  
+  a:active {
+	color: cyan;
+  }
+
 /*[Navigation]*/
 /**/.Navigation {
 /**/	display: flex;
@@ -46,6 +62,9 @@ p {
 /**/}
 /**/#NavActive, #NavList li:hover {
 /**/	border-bottom: solid #000;
+/**/}
+/**/#NavList li a {
+/**/color: #FFFFFF;
 /**/}
 
 /*[Index.html Text and Image]*/
@@ -106,24 +125,22 @@ p {
 /**/	flex-direction: Column;
 /**/	align-items: center;
 /**/	justify-content: space-evenly;
-		font-size: 1em;
+/**/	font-size: 1em;
 /**/}
 /**/.Experience {
-		display: flex;
-		align-items: center;
-		background-color: rgba(0, 0, 0, 0.1);
-		border-radius: 30px;
-		height: 20vh;
-		width: 90vw;
+/**/	display: flex;
+/**/	align-items: center;
+/**/	background-color: rgba(0, 0, 0, 0.1);
+/**/	border-radius: 30px;
+/**/	height: 20vh;
+/**/	width: 90vw;
 /**/}
 /**/.ExperienceImage {
 /**/	width: auto;
-/**/	height: 20vh;
-		margin-right: 2.5vw;
-		margin-left: 2.5vw;
-/**/}
-/**/.ExperienceText {
-		
+/**/	height: 15vh;
+/**/	margin-right: 2.5vw;
+/**/	margin-left: 2.5vw;
+/**/	border-radius: 30px;
 /**/}
 
 /*[Versie voor Telefoons]*/
@@ -146,6 +163,7 @@ p {
 
 .ExperienceImage {
 	height: 50%;
+	margin-top: 3vw;
 }
 
 .Experience {
