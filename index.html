@@ -8,28 +8,76 @@
 	<meta name="description" content="Max Kruiswegt is a Dutch novice developer with experience in C#, HTML, CSS and SQL. He also has experience in other digital fields like community management. Read more about him here.">
 	<link rel="icon" href="img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre" rel="stylesheet">
-	<link rel="stylesheet" href="css/stylesheet.css">
-	
-  </head>
-  <body>
 
-	<nav class="Navigation">
-		<a href="index"><img id="Icon" src="https://imgur.com/5AbWrdE.jpg" alt="Logo"></a>
-		<ul id="NavList">
-		  <li><a id="NavActive" href="index">Home</a></li>
-		  <li><a href="pages/socials">Socials</a></li>
-		  <li><a href="pages/experience">Experience</a></li>
-		</ul>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  </head>
+  <body style="height:2000px">
+
+	<nav class="navbar fixed-top navbar-expand-sm navbar-light" style="background-color: #bde99c">
+		<div class="container-fluid">
+			<a 
+			href="index" 
+			class="navbar-brand mb-0">
+				<img 
+				class="d-inline-block" 
+				src="img/MKLogo.png" 
+				height="32"/>
+			</a>
+			<button
+			type="button"
+			data-bs-toggle="collapse"
+			data-bs-target="#navbarMK"
+			class="navbar-toggler"
+			aria-controls="navbarMK"
+			aria-expanded="false"
+			aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div 
+				class="collapse navbar-collapse" 
+				id="navbarMK">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a href="index" class="nav-link active">
+							Home
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="pages/experience" class="nav-link">
+							Experience
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="pages/socials" class="nav-link dropdown-toggle"
+						id="navbarDropdownSocials"
+						role="button"
+						data-bs-toggle="dropdown"
+						aria-expanded="false">
+							Socials
+						</a>
+						<ul class="dropdown-menu"
+						aria-labelledby="navbarDropdownSocials">
+							<li><a href="https://www.linkedin.com/in/maxkruiswegt" class="dropdown-item d-flex align-items-center"><img src="img/buttonOne.png" height="16" class="me-2" style="border-radius: 1px">Max Kruiswegt</a></li>
+							<li><a href="https://github.com/ItsMaxDev" class="dropdown-item d-flex align-items-center"><img src="img/buttonTwo.png" height="16" class="me-2" style="border-radius: 1px">ItsMaxDev</a></li>
+							<li><a href="https://open.spotify.com/user/maxkruiswegt" class="dropdown-item d-flex align-items-center"><img src="img/buttonThree.png" height="16" class="me-2" style="border-radius: 1px">ItsMax</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</nav>
 
-		<section class="HomeImageAndText">
-			<img id="HomeImage" src="https://imgur.com/9G1ZbrA.png" alt="Construction Helmet">
-			<p id="HomeText" >Heya! My website is under construction for the time being. I'm a freelancer with experience in the digital world.</p>
-		</section>
+	<!--<div class="container-fluid">
+		<img id="HomeImage" src="https://imgur.com/9G1ZbrA.png" alt="Construction Helmet">
+		<p id="HomeText" >Heya! My website is under construction for the time being. I'm a freelancer with experience in the digital world.</p>
+	</div>
 
 	<footer class="Footer">
 					<p>&copy Max Kruiswegt | <script>document.write( new Date().getFullYear() );</script></p>
-	</footer>
-	
+	</footer>-->	
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
   </body>
 </html>
