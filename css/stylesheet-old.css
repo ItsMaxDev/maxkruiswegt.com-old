@@ -1,0 +1,188 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-decoration: none;
+	list-style: none;
+	color: #FFFFFF;
+	text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+	max-width: 100vw;
+	max-height: 100vh;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: #333;
+	font-size: 16px;
+	font-family: 'Averia Sans Libre', cursive;
+}
+
+p {
+	font-family: 'Averia Sans Libre', cursive;
+	font-size: 1.5em;
+	color: #FFFFFF;
+}
+
+a:link {
+	color: cyan;
+  }
+  
+  a:visited {
+	color: cyan;
+  }
+  
+  a:hover {
+	color: rgb(15, 136, 136);
+  }
+  
+  a:active {
+	color: cyan;
+  }
+
+/*[Navigation]*/
+/**/.Navigation {
+/**/	display: flex;
+/**/	background-color: #555;
+/**/	height: 64px;
+/**/}
+/**/#Icon {
+/**/	height: 64px;
+/**/	width: 64px;
+/**/}
+/**/#NavList {
+/**/	display: flex;
+/**/	height: 64px;
+/**/	flex-direction: row;
+/**/	align-items: center;
+/**/}
+/**/#NavList li {
+/**/	margin-left: 10%;
+/**/}
+/**/#NavActive, #NavList li:hover {
+/**/	border-bottom: solid #000;
+/**/}
+/**/#NavList li a {
+/**/color: #FFFFFF;
+/**/}
+
+/*[Index.html Text and Image]*/
+/**/.HomeImageAndText {
+/**/	display: flex;
+/**/	height: 100vh;
+/**/	flex-direction: column;
+/**/	align-items: center;
+/**/	justify-content: center;
+/**/}
+/**/#HomeImage {
+/**/	width: 256px;
+/**/	height: auto;
+/**/}
+/**/#HomeText {
+/**/	width: 450px;
+/**/	text-align: center;
+/**/    margin-top: 15px;
+/**/}
+
+/*[Footer]*/
+/**/.Footer {
+/**/background-color: #222;
+/**/margin-top: auto;
+/**/}
+/**/.Footer p {
+/**/	font-size: 1em;
+/**/}
+
+/*[Socials.html Text and Image]*/
+/**/.SocialsTextAndButtons {
+/**/	display: flex;
+/**/	height: 100vh;
+/**/	flex-direction: column;
+/**/	align-items: center;
+/**/	justify-content: center;
+/**/}
+/**/#SocialsButtons {
+/**/	margin-top: 15px;
+/**/	display: flex;
+/**/}
+/**/#SocialsButtons button {
+/**/	background-color: #333;
+/**/	margin: 0px 5px;
+/**/    width: 128px;
+/**/    height: 128px;
+/**/}
+/**/.ButtonImages {
+/**/	width: 100%;
+/**/	height: auto;
+/**/	cursor: pointer;
+/**/}
+
+/*[Experience.html]*/
+/**/.ExperienceMain {
+/**/	height: 100vh;
+/**/	display: flex;
+/**/	flex-direction: Column;
+/**/	align-items: center;
+/**/	justify-content: space-evenly;
+/**/	font-size: 1em;
+/**/}
+/**/.Experience {
+/**/	display: flex;
+/**/	align-items: center;
+/**/	background-color: rgba(0, 0, 0, 0.1);
+/**/	border-radius: 30px;
+/**/	height: 20vh;
+/**/	width: 90vw;
+/**/}
+/**/.ExperienceImage {
+/**/	width: auto;
+/**/	height: 15vh;
+/**/	margin-right: 2.5vw;
+/**/	margin-left: 2.5vw;
+/**/	border-radius: 30px;
+/**/}
+.ExperienceTitleAndText {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 15vh;
+}
+
+/*[Versie voor Telefoons]*/
+@media screen and (max-width: 480px) {
+
+#NavList li, #HomeText, .Footer p, #SocialsText {
+	font-size: 5vw;
+}
+
+#HomeImage {
+	width: 50%;
+}
+
+.ExperienceText {
+	font-size: 0.70em;
+}
+
+.ExperienceTitle {
+	font-size: 0.80em;
+}
+
+.ExperienceImage {
+	height: 7.5vh;
+	border-radius: 15px;
+	align-self: flex-start;
+	margin-top: 2.5vw;
+}
+
+}
+
+/*[Versie voor Tablets]*/
+@media screen and (min-width:480px) and (max-width: 1024px) {
+
+	.ExperienceText {
+		font-size: 2.3vw;
+	}
+
+}
