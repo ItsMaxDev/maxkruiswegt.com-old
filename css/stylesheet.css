@@ -9,3 +9,17 @@
 .navigation {
 	background-color: rgb(255, 255, 255, 0.5)
 }
+
+.footer {
+	background-color: rgb(255, 255, 255, 0.5)
+}
+
+.nav-item {
+	font-size: 1.05em;
+	margin-left: 10px;
+}
+
+.MainPage {
+	height: 100vh;
+	width: 100vw;
+}
