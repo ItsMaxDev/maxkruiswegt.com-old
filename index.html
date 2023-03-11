@@ -13,13 +13,13 @@
 	<link rel="stylesheet" href="/css/stylesheet.css">
 
   </head>
-  <body data-bs-theme="light" style="font-size: 50px;">
-	<div class="bg-image background" style="height: 100vh; background-image: url('img/SmallTownArt.jpg');">
+  <body data-bs-theme="light">
+	<div id="bg-image" class="bg-image background" style="height: 100vh; background-image: url('img/SmallTownArt.jpg');">
 		<nav class="navbar fixed-top navbar-expand-sm navbar-light navigation">
 			<div class="container-fluid">
 				<a 
 				href="index" 
-				class="navbar-brand mb-0">
+				class="navbar-brand mb-0 me-0 col-3">
 					<img 
 					class="d-inline-block" 
 					src="img/MKLogo.png" 
@@ -36,9 +36,9 @@
 					<span role="button"><i class="fa fa-bars" aria-hidden="true" style="color:#222529"></i></span>
 				</button>
 				<div 
-					class="collapse navbar-collapse" 
+					class="collapse navbar-collapse col-6" 
 					id="navbarMK">
-					<ul class="navbar-nav">
+					<ul class="navbar-nav w-100 d-flex justify-content-center">
 						<li class="nav-item">
 							<a href="index" class="nav-link active text-dark">
 								Home
@@ -65,7 +65,7 @@
 							</ul>
 						</li>
 					</ul>
-					<ul class="navbar-nav ms-auto d-flex align-items-center flex-row">
+					<ul class="navbar-nav d-flex align-items-center flex-row justify-content-end col-3">
 						<i class="fa-solid fa-sun me-1" aria-hidden="true" style="color:#222529"></i>
 						<div class="form-check form-switch p-0 d-flex align-items-center">
 							<input type="checkbox" class="form-check-input ms-auto shadow-none" role="switch" id="themeSwitch" onclick="themeSwitch();">
@@ -80,9 +80,16 @@
 	<script>
 		function themeSwitch() {
 			var element = document.body;
-			var elementTwo = document.getElementsByClassName('background')[0];
 			element.dataset.bsTheme = element.dataset.bsTheme == "light" ? "dark" : "light";
-			elementTwo.style.backgroundImage = elementTwo.style.backgroundImage == "url('img/SmallTownArt.jpg')" ? "url('img/SmallTownArtNight.jpg')" : "url('img/SmallTownArt.jpg')";
+
+			var bgImage = document.getElementById("bg-image");
+			var checkBox = document.getElementById("themeSwitch");
+
+			if (checkBox.checked == true){
+				bgImage.style.backgroundImage = "url('img/SmallTownArtNight.jpg')";
+			} else {
+				bgImage.style.backgroundImage = "url('img/SmallTownArt.jpg')";
+			}
 		}
 	</script>
 
