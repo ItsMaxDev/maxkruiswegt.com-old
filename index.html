@@ -88,16 +88,30 @@
 	<script>
 		function themeSwitch() {
 			var element = document.body;
-			element.dataset.bsTheme = element.dataset.bsTheme == "light" ? "dark" : "light";
-
 			var bgImage = document.getElementById("bg-image");
 			var checkBox = document.getElementById("themeSwitch");
-
+			
 			if (checkBox.checked == true){
+				element.dataset.bsTheme = "dark";
 				bgImage.style.backgroundImage = "url('img/SmallTownArtNight.jpg')";
+				localStorage.setItem("theme", "dark");
 			} else {
+				element.dataset.bsTheme = "light";
 				bgImage.style.backgroundImage = "url('img/SmallTownArt.jpg')";
+				localStorage.setItem("theme", "light");
 			}
+		}
+		
+		// Set the initial theme based on the user's preference stored in localStorage
+		var storedTheme = localStorage.getItem("theme");
+		if (storedTheme == "dark") {
+			document.body.dataset.bsTheme = "dark";
+			document.getElementById("themeSwitch").checked = true;
+			document.getElementById("bg-image").style.backgroundImage = "url('img/SmallTownArtNight.jpg')";
+		} else {
+			document.body.dataset.bsTheme = "light";
+			document.getElementById("themeSwitch").checked = false;
+			document.getElementById("bg-image").style.backgroundImage = "url('img/SmallTownArt.jpg')";
 		}
 	</script>
 
