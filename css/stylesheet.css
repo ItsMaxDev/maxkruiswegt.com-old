@@ -23,3 +23,20 @@
 	height: 100vh;
 	width: 100vw;
 }
+
+.card-img-top {
+    max-height: 250px;
+    max-width: 100%;
+    object-fit: contain;
+	border-radius: 5px;
+  }
+
+  @media only screen and (max-width: 768px) {
+	.card {
+	  flex-direction: column !important;
+	}
+	.card-img-top {
+	  width: 100% !important;
+	  height: auto !important;
+	}
+  }
