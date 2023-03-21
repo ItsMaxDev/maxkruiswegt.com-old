@@ -24,13 +24,19 @@
 	width: 100vw;
 }
 
-.card-img-top {
+.card {
+	border-radius: 15px;
+}
+
+.card-img {
     max-height: 250px;
     max-width: 100%;
     object-fit: contain;
-	border-radius: 5px;
 	width: auto;
 	background-color: #010B14;
+	border-radius: 15px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
   }
 
 .card1 {
@@ -41,8 +47,10 @@
 	.card {
 	  flex-direction: column !important;
 	}
-	.card-img-top {
+	.card-img {
 	  width: 100% !important;
 	  height: auto !important;
+	  border-top-right-radius: 15px;
+	  border-bottom-left-radius: 0px;
 	}
   }
