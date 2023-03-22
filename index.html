@@ -10,11 +10,12 @@
     <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-	<link rel="stylesheet" href="/css/stylesheet.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
 
   </head>
   <body data-bs-theme="light">
 	<div id="bg-image" class="bg-image background" style="height: 100vh; background-image: url('img/SmallTownArt.jpg');">
+	<div class="bg-overlay" style="background-color: rgb(34, 37, 41, 0.2);">
 		<nav class="navbar fixed-top navbar-expand-sm navbar-light navigation">
 			<div class="container-fluid">
 				<a 
@@ -84,20 +85,24 @@
 			</div>
 		  </div>
 	</div>
+	</div>
 
 	<script>
 		function themeSwitch() {
 			var element = document.body;
 			var bgImage = document.getElementById("bg-image");
 			var checkBox = document.getElementById("themeSwitch");
+			var bgOverlay = document.querySelector(".bg-overlay");
 			
 			if (checkBox.checked == true){
 				element.dataset.bsTheme = "dark";
 				bgImage.style.backgroundImage = "url('img/SmallTownArtNight.jpg')";
+				bgOverlay.style.backgroundColor = "rgba(175, 181, 188, 0.2)";
 				localStorage.setItem("theme", "dark");
 			} else {
 				element.dataset.bsTheme = "light";
 				bgImage.style.backgroundImage = "url('img/SmallTownArt.jpg')";
+				bgOverlay.style.backgroundColor = "rgba(34, 37, 41, 0.2)";
 				localStorage.setItem("theme", "light");
 			}
 		}
@@ -108,10 +113,12 @@
 			document.body.dataset.bsTheme = "dark";
 			document.getElementById("themeSwitch").checked = true;
 			document.getElementById("bg-image").style.backgroundImage = "url('img/SmallTownArtNight.jpg')";
+			document.querySelector(".bg-overlay").style.backgroundColor = "rgba(175, 181, 188, 0.2)";
 		} else {
 			document.body.dataset.bsTheme = "light";
 			document.getElementById("themeSwitch").checked = false;
 			document.getElementById("bg-image").style.backgroundImage = "url('img/SmallTownArt.jpg')";
+			document.querySelector(".bg-overlay").style.backgroundColor = "rgba(34, 37, 41, 0.2)";
 		}
 	</script>
 
