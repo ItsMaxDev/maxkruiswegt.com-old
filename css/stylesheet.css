@@ -60,17 +60,13 @@
 	font-weight: 300;
   	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
-  
-  /* About section styles */
-  .about-section {
-	padding: 100px 0;
-	background-color: #f8f9fa;
-  }
 
   @media only screen and (max-width: 768px) {
+
 	.card {
 	  flex-direction: column !important;
 	}
+
 	.card-img {
 	  width: 100% !important;
 	  height: auto !important;
@@ -80,9 +76,9 @@
 
 	.hero-title {
 		font-size: 3.5rem;
-	  }
+	}
 	
-	  .hero-subtitle {
+	.hero-subtitle {
 		font-size: 1.5rem;
-	  }
+	}
   }

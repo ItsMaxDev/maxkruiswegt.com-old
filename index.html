@@ -83,17 +83,7 @@
 				  <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
 					<p class="hero-subtitle">I'm a Dutch novice developer with experience in C#, HTML, CSS and SQL. I also have experience in other digital fields like community management.</p>
 				  </div>
-				  <a href="#about" class="btn btn-primary btn-lg">Learn More</a>
-				</div>
-			  </div>
-			</div>
-		  </section>
-		  
-		  <section id="about" class="about-section">
-			<div class="container">
-			  <div class="row">
-				<div class="col-md-12">
-				  <!-- About content goes here -->
+				  <a href="pages/experience" class="btn btn-dark btn-lg" id="MainButton">Learn More</a>
 				</div>
 			  </div>
 			</div>
@@ -105,14 +95,19 @@
 			var element = document.body;
 			var bgImage = document.getElementById("bg-image");
 			var checkBox = document.getElementById("themeSwitch");
+			var mainButton = document.getElementById("MainButton");
 			
 			if (checkBox.checked == true){
 				element.dataset.bsTheme = "dark";
 				bgImage.style.backgroundImage = "url('img/NightLandscape2.png')";
+				mainButton.classList.remove("btn-dark");
+				mainButton.classList.add("btn-info");
 				localStorage.setItem("theme", "dark");
 			} else {
 				element.dataset.bsTheme = "light";
 				bgImage.style.backgroundImage = "url('img/DayLandscape2.png')";
+				mainButton.classList.remove("btn-info");
+				mainButton.classList.add("btn-dark");
 				localStorage.setItem("theme", "light");
 			}
 		}
@@ -123,10 +118,14 @@
 			document.body.dataset.bsTheme = "dark";
 			document.getElementById("themeSwitch").checked = true;
 			document.getElementById("bg-image").style.backgroundImage = "url('img/NightLandscape2.png')";
+			document.getElementById('MainButton').classList.remove('btn-dark');
+			document.getElementById('MainButton').classList.add('btn-info');
 		} else {
 			document.body.dataset.bsTheme = "light";
 			document.getElementById("themeSwitch").checked = false;
 			document.getElementById("bg-image").style.backgroundImage = "url('img/DayLandscape2.png')";
+			document.getElementById('MainButton').classList.remove('btn-info');
+			document.getElementById('MainButton').classList.add('btn-dark');
 		}
 	</script>
 
