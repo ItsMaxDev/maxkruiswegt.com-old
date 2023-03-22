@@ -14,8 +14,7 @@
 
   </head>
   <body data-bs-theme="light">
-	<div id="bg-image" class="bg-image background" style="height: 100vh; background-image: url('img/SmallTownArt.jpg');">
-	<div class="bg-overlay" style="background-color: rgb(34, 37, 41, 0.2);">
+	<div id="bg-image" class="bg-image background" style="height: 100vh; background-image: url('img/DayLandscape2.png');">
 		<nav class="navbar fixed-top navbar-expand-sm navbar-light navigation">
 			<div class="container-fluid">
 				<a 
@@ -76,15 +75,29 @@
 				</div>
 			</div>
 		</nav>
-		<div class="container d-flex justify-content-center align-items-center MainPage">
-			<div class="row">
-			  <div class="col text-center">
-				<h5 class="p-1" style="background-color: rgb(255, 255, 255, 0.6); color: #212529">The site is currently under construction</h5>
-				<a href="pages/experience" class="btn btn-lg btn-primary">Go to my experiences</a>
+		<section class="hero-section d-flex align-items-center">
+			<div class="container">
+			  <div class="row">
+				<div class="col-12 text-center">
+				  <h1 class="hero-title">Hey, I am Max &#128075;</h1>
+				  <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+					<p class="hero-subtitle">I'm a Dutch novice developer with experience in C#, HTML, CSS and SQL. I also have experience in other digital fields like community management.</p>
+				  </div>
+				  <a href="#about" class="btn btn-primary btn-lg">Learn More</a>
+				</div>
 			  </div>
 			</div>
-		  </div>
-	</div>
+		  </section>
+		  
+		  <section id="about" class="about-section">
+			<div class="container">
+			  <div class="row">
+				<div class="col-md-12">
+				  <!-- About content goes here -->
+				</div>
+			  </div>
+			</div>
+		  </section>
 	</div>
 
 	<script>
@@ -92,17 +105,14 @@
 			var element = document.body;
 			var bgImage = document.getElementById("bg-image");
 			var checkBox = document.getElementById("themeSwitch");
-			var bgOverlay = document.querySelector(".bg-overlay");
 			
 			if (checkBox.checked == true){
 				element.dataset.bsTheme = "dark";
-				bgImage.style.backgroundImage = "url('img/SmallTownArtNight.jpg')";
-				bgOverlay.style.backgroundColor = "rgba(175, 181, 188, 0.2)";
+				bgImage.style.backgroundImage = "url('img/NightLandscape2.png')";
 				localStorage.setItem("theme", "dark");
 			} else {
 				element.dataset.bsTheme = "light";
-				bgImage.style.backgroundImage = "url('img/SmallTownArt.jpg')";
-				bgOverlay.style.backgroundColor = "rgba(34, 37, 41, 0.2)";
+				bgImage.style.backgroundImage = "url('img/DayLandscape2.png')";
 				localStorage.setItem("theme", "light");
 			}
 		}
@@ -112,13 +122,11 @@
 		if (storedTheme == "dark") {
 			document.body.dataset.bsTheme = "dark";
 			document.getElementById("themeSwitch").checked = true;
-			document.getElementById("bg-image").style.backgroundImage = "url('img/SmallTownArtNight.jpg')";
-			document.querySelector(".bg-overlay").style.backgroundColor = "rgba(175, 181, 188, 0.2)";
+			document.getElementById("bg-image").style.backgroundImage = "url('img/NightLandscape2.png')";
 		} else {
 			document.body.dataset.bsTheme = "light";
 			document.getElementById("themeSwitch").checked = false;
-			document.getElementById("bg-image").style.backgroundImage = "url('img/SmallTownArt.jpg')";
-			document.querySelector(".bg-overlay").style.backgroundColor = "rgba(34, 37, 41, 0.2)";
+			document.getElementById("bg-image").style.backgroundImage = "url('img/DayLandscape2.png')";
 		}
 	</script>
 

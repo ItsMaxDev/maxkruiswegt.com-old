@@ -14,8 +14,7 @@
 	
   </head>
   <body data-bs-theme="light">
-	<div id="bg-image" class="bg-image background" style="background-image: url('../img/SmallTownArt.jpg');">
-	<div class="bg-overlay" style="background-color: rgb(34, 37, 41, 0.2);">
+	<div id="bg-image" class="bg-image background" style="background-image: url('../img/DayLandscape2.png');">
 		<nav class="navbar fixed-top navbar-expand-sm navbar-light navigation">
 			<div class="container-fluid">
 				<a 
@@ -118,7 +117,6 @@
 			  </div>
 			</div>
 		</div>
-	</div>	  
 	</div>
 
 	<script>
@@ -126,17 +124,14 @@
 			var element = document.body;
 			var bgImage = document.getElementById("bg-image");
 			var checkBox = document.getElementById("themeSwitch");
-			var bgOverlay = document.querySelector(".bg-overlay");
 			
 			if (checkBox.checked == true){
 				element.dataset.bsTheme = "dark";
-				bgImage.style.backgroundImage = "url('../img/SmallTownArtNight.jpg')";
-				bgOverlay.style.backgroundColor = "rgba(175, 181, 188, 0.2)";
+				bgImage.style.backgroundImage = "url('../img/NightLandscape2.png')";
 				localStorage.setItem("theme", "dark");
 			} else {
 				element.dataset.bsTheme = "light";
-				bgImage.style.backgroundImage = "url('../img/SmallTownArt.jpg')";
-				bgOverlay.style.backgroundColor = "rgba(34, 37, 41, 0.2)";
+				bgImage.style.backgroundImage = "url('../img/DayLandscape2.png')";
 				localStorage.setItem("theme", "light");
 			}
 		}
@@ -146,13 +141,11 @@
 		if (storedTheme == "dark") {
 			document.body.dataset.bsTheme = "dark";
 			document.getElementById("themeSwitch").checked = true;
-			document.getElementById("bg-image").style.backgroundImage = "url('../img/SmallTownArtNight.jpg')";
-			document.querySelector(".bg-overlay").style.backgroundColor = "rgba(175, 181, 188, 0.2)";
+			document.getElementById("bg-image").style.backgroundImage = "url('../img/NightLandscape2.png')";
 		} else {
 			document.body.dataset.bsTheme = "light";
 			document.getElementById("themeSwitch").checked = false;
-			document.getElementById("bg-image").style.backgroundImage = "url('../img/SmallTownArt.jpg')";
-			document.querySelector(".bg-overlay").style.backgroundColor = "rgba(34, 37, 41, 0.2)";
+			document.getElementById("bg-image").style.backgroundImage = "url('../img/DayLandscape2.png')";
 		}
 	</script>
 

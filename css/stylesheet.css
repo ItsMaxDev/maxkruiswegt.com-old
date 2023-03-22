@@ -43,6 +43,30 @@
 	background-color: #1B1D42;
 }
 
+/* Hero section styles */
+.hero-section {
+	height: 100vh;
+  }
+  
+  .hero-title {
+	font-size: 5rem;
+	font-weight: 600;
+  	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-subtitle {
+	font-size: 2rem;
+	text-align: center;
+	font-weight: 300;
+  	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* About section styles */
+  .about-section {
+	padding: 100px 0;
+	background-color: #f8f9fa;
+  }
+
   @media only screen and (max-width: 768px) {
 	.card {
 	  flex-direction: column !important;
@@ -53,4 +77,12 @@
 	  border-top-right-radius: 15px;
 	  border-bottom-left-radius: 0px;
 	}
+
+	.hero-title {
+		font-size: 3.5rem;
+	  }
+	
+	  .hero-subtitle {
+		font-size: 1.5rem;
+	  }
   }
