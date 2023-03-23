@@ -124,14 +124,17 @@
 			var element = document.body;
 			var bgImage = document.getElementById("bg-image");
 			var checkBox = document.getElementById("themeSwitch");
+			var navigation = document.querySelector('.navigation');
 			
 			if (checkBox.checked == true){
 				element.dataset.bsTheme = "dark";
 				bgImage.style.backgroundImage = "url('../img/NightLandscape2.png')";
+				navigation.style.boxShadow = '0px 5px 5px 0px rgba(255,255,255,0.15)';
 				localStorage.setItem("theme", "dark");
 			} else {
 				element.dataset.bsTheme = "light";
 				bgImage.style.backgroundImage = "url('../img/DayLandscape2.png')";
+				navigation.style.boxShadow = '0px 5px 5px 0px rgba(0,0,0,0.15)';
 				localStorage.setItem("theme", "light");
 			}
 		}
@@ -142,10 +145,12 @@
 			document.body.dataset.bsTheme = "dark";
 			document.getElementById("themeSwitch").checked = true;
 			document.getElementById("bg-image").style.backgroundImage = "url('../img/NightLandscape2.png')";
+			document.querySelector('.navigation').style.boxShadow = '0px 5px 5px 0px rgba(255,255,255,0.15)';
 		} else {
 			document.body.dataset.bsTheme = "light";
 			document.getElementById("themeSwitch").checked = false;
 			document.getElementById("bg-image").style.backgroundImage = "url('../img/DayLandscape2.png')";
+			document.querySelector('.navigation').style.boxShadow = '0px 5px 5px 0px rgba(0,0,0,0.15)';
 		}
 	</script>
 
