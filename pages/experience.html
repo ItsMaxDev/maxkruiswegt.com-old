@@ -15,7 +15,7 @@
   </head>
   <body data-bs-theme="light">
 	<div id="bg-image" class="bg-image background" style="background-image: url('../img/DayLandscape2.png');">
-		<nav class="navbar fixed-top navbar-expand-sm navbar-light navigation">
+		<nav class="navbar navbar-expand-sm navbar-light navigation">
 			<div class="container-fluid">
 				<a 
 				href="../index" 
@@ -51,21 +51,6 @@
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle text-dark"
-							id="navbarDropdownSocials"
-							role="button"
-							data-bs-toggle="dropdown"
-							aria-expanded="false">
-								Socials
-							</a>
-							<ul class="dropdown-menu"
-							aria-labelledby="navbarDropdownSocials">
-								<li><a href="https://www.linkedin.com/in/maxkruiswegt" target="_blank" class="dropdown-item d-flex align-items-center"><img src="../img/buttonOne.png" height="16" class="me-2" style="border-radius: 1px" alt="LinkedIn">Max Kruiswegt</a></li>
-								<li><a href="https://github.com/ItsMaxDev" target="_blank" class="dropdown-item d-flex align-items-center"><img src="../img/buttonTwo.png" height="16" class="me-2" style="border-radius: 1px" alt="Github">ItsMaxDev</a></li>
-								<li><a href="https://open.spotify.com/user/maxkruiswegt" target="_blank" class="dropdown-item d-flex align-items-center"><img src="../img/buttonThree.png" height="16" class="me-2" style="border-radius: 1px" alt="Spotify">ItsMax</a></li>
-							</ul>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle text-dark"
 							id="navbarDropdownLanguages"
 							role="button"
 							data-bs-toggle="dropdown"
@@ -89,8 +74,8 @@
 				</div>
 			</div>
 		</nav>
-		<div style="display:flex; justify-content:center; align-items:center; min-height: 100vh; overflow-x: hidden;">
-			<div class="container d-flex flex-wrap justify-content-center align-items-center" style="margin-top: 100px;">
+		<div style="display:flex; justify-content:center; align-items:center;">
+			<div class="container d-flex flex-wrap justify-content-center align-items-center" style="margin-top: 100px; margin-bottom: 100px;">
 			  <div class="row">
 				<div class="col-12 mb-4">
 				  <div class="card d-flex flex-row align-items-center">
@@ -131,6 +116,53 @@
 			  </div>
 			</div>
 		</div>
+		<footer>
+			<section class="FooterTop">
+				<div class="container text-center text-md-start pt-5">
+					<div class="row d-flex justify-content-between">
+						<div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+							<img 
+							class="d-inline-block mb-4" 
+							src="../img/MKLogo.png" 
+							height="30"/>
+							<p>
+								Max Kruiswegt is a Dutch novice developer with experience in C#, HTML, CSS and SQL. He also has experience in other digital fields like community management.
+							</p>
+						</div>
+						<div class="col-md-2 col-lg-2 col-xl-2 mb-4">
+							<h6 class="text-uppercase fw-bold mb-4">
+							Pages
+							</h6>
+							<p>
+							<a href="../index" class="text-reset">Home</a>
+							</p>
+							<p>
+							<a href="experience" class="text-reset">Experience</a>
+							</p>
+						</div>
+						<div class="col-md-4 col-lg-3 col-xl-3 mb-md-0 mb-4">
+							<h6 class="text-uppercase fw-bold mb-4">Information</h6>
+							<p><i class="fas fa-envelope me-3"></i>info@maxkruiswegt.com</p>
+							<p><i class="fas fa-briefcase me-3"></i>KvK: 89767810</p>
+							<p><i class="fas fa-credit-card me-3"></i>VAT No: _____</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="container d-flex justify-content-center justify-content-lg-between p-4 border-top FooterBottom">
+				<div class="me-5 d-none d-lg-block">
+					<span>Max Kruiswegt&#174; &#9656; 2023 - <script>document.write( new Date().getFullYear() );</script></span>
+				</div>
+				<div>
+					<a href="https://www.linkedin.com/in/maxkruiswegt" target="_blank" class="me-4 text-reset">
+					<i class="fab fa-linkedin"></i></a>
+					<a href="https://github.com/ItsMaxDev" target="_blank" class="me-4 text-reset">
+					<i class="fab fa-github"></i></a>
+					<a href="https://open.spotify.com/user/maxkruiswegt" target="_blank" class="text-reset">
+					<i class="fab fa-spotify"></i></a>
+				</div>
+			</section>
+		</footer>
 	</div>
 
 	<script>
@@ -139,16 +171,19 @@
 			var bgImage = document.getElementById("bg-image");
 			var checkBox = document.getElementById("themeSwitch");
 			var navigation = document.querySelector('.navigation');
+			var footer = document.querySelector('Footer');
 			
 			if (checkBox.checked == true){
 				element.dataset.bsTheme = "dark";
 				bgImage.style.backgroundImage = "url('../img/NightLandscape2.png')";
 				navigation.style.boxShadow = '0px 5px 5px 0px rgba(255,255,255,0.15)';
+				footer.style.boxShadow = '0px -5px 5px 0px rgba(255,255,255,0.15)';
 				localStorage.setItem("theme", "dark");
 			} else {
 				element.dataset.bsTheme = "light";
 				bgImage.style.backgroundImage = "url('../img/DayLandscape2.png')";
 				navigation.style.boxShadow = '0px 5px 5px 0px rgba(0,0,0,0.15)';
+				footer.style.boxShadow = '0px -5px 5px 0px rgba(0,0,0,0.15)';
 				localStorage.setItem("theme", "light");
 			}
 		}
@@ -160,11 +195,13 @@
 			document.getElementById("themeSwitch").checked = true;
 			document.getElementById("bg-image").style.backgroundImage = "url('../img/NightLandscape2.png')";
 			document.querySelector('.navigation').style.boxShadow = '0px 5px 5px 0px rgba(255,255,255,0.15)';
+			document.querySelector('Footer').style.boxShadow = '0px -5px 5px 0px rgba(255,255,255,0.15)';
 		} else {
 			document.body.dataset.bsTheme = "light";
 			document.getElementById("themeSwitch").checked = false;
 			document.getElementById("bg-image").style.backgroundImage = "url('../img/DayLandscape2.png')";
 			document.querySelector('.navigation').style.boxShadow = '0px 5px 5px 0px rgba(0,0,0,0.15)';
+			document.querySelector('Footer').style.boxShadow = '0px -5px 5px 0px rgba(0,0,0,0.15)';
 		}
 	</script>
 
