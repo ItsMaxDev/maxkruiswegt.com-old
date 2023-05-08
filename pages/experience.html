@@ -13,8 +13,8 @@
 	<link rel="stylesheet" href="../css/stylesheet.css">
 	
   </head>
-  <body data-bs-theme="light">
-	<div id="bg-image" class="bg-image background" style="background-image: url('../img/DayLandscape2.png');">
+  <body data-bs-theme="dark">
+	<div id="bg-image" class="bg-image background" style="background-image: url('../img/NightLandscape2.png');">
 		<nav class="navbar navbar-expand-md navbar-light navigation">
 			<div class="container-fluid">
 				<a 
@@ -198,18 +198,18 @@
 		
 		// Set the initial theme based on the user's preference stored in localStorage
 		var storedTheme = localStorage.getItem("theme");
-		if (storedTheme == "dark") {
-			document.body.dataset.bsTheme = "dark";
-			document.getElementById("themeSwitch").checked = true;
-			document.getElementById("bg-image").style.backgroundImage = "url('../img/NightLandscape2.png')";
-			document.querySelector('.navigation').style.boxShadow = '0px 5px 5px 0px rgba(255,255,255,0.15)';
-			document.querySelector('Footer').style.boxShadow = '0px -5px 5px 0px rgba(255,255,255,0.15)';
-		} else {
+		if (storedTheme == "light") {
 			document.body.dataset.bsTheme = "light";
 			document.getElementById("themeSwitch").checked = false;
 			document.getElementById("bg-image").style.backgroundImage = "url('../img/DayLandscape2.png')";
 			document.querySelector('.navigation').style.boxShadow = '0px 5px 5px 0px rgba(0,0,0,0.15)';
 			document.querySelector('Footer').style.boxShadow = '0px -5px 5px 0px rgba(0,0,0,0.15)';
+		} else {
+			document.body.dataset.bsTheme = "dark";
+			document.getElementById("themeSwitch").checked = true;
+			document.getElementById("bg-image").style.backgroundImage = "url('../img/NightLandscape2.png')";
+			document.querySelector('.navigation').style.boxShadow = '0px 5px 5px 0px rgba(255,255,255,0.15)';
+			document.querySelector('Footer').style.boxShadow = '0px -5px 5px 0px rgba(255,255,255,0.15)';
 		}
 	</script>
 
