@@ -28,4 +28,16 @@
                href="https://maxkruiswegt.com/nl/pages/ervaring"/>
     <priority>0.80</priority>
   </url>
+  <url>
+    <loc>https://maxkruiswegt.com/pages/portfolio</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://maxkruiswegt.com/pages/portfolio"/>
+    <xhtml:link
+               rel="alternate"
+               hreflang="nl"
+               href="https://maxkruiswegt.com/nl/pages/portfolio"/>
+    <priority>0.80</priority>
+  </url>
 </urlset>
